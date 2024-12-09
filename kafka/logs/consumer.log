@@ -1,0 +1,468 @@
+14:48:40,313 <kafka.metrics.metrics>[DEBUG]: Added sensor with name connections-closed
+14:48:40,314 <kafka.metrics.metrics>[DEBUG]: Added sensor with name connections-created
+14:48:40,314 <kafka.metrics.metrics>[DEBUG]: Added sensor with name select-time
+14:48:40,314 <kafka.metrics.metrics>[DEBUG]: Added sensor with name io-time
+14:48:40,315 <kafka.client>[DEBUG]: Initiating connection to node bootstrap-1 at localhost:9092
+14:48:40,315 <kafka.metrics.metrics>[DEBUG]: Added sensor with name bytes-sent-received
+14:48:40,315 <kafka.metrics.metrics>[DEBUG]: Added sensor with name bytes-sent
+14:48:40,316 <kafka.metrics.metrics>[DEBUG]: Added sensor with name bytes-received
+14:48:40,316 <kafka.metrics.metrics>[DEBUG]: Added sensor with name request-latency
+14:48:40,317 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-bootstrap-1.bytes-sent
+14:48:40,317 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-bootstrap-1.bytes-received
+14:48:40,317 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-bootstrap-1.latency
+14:48:40,322 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <disconnected> [unspecified None]>: creating new socket
+14:48:40,322 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <disconnected> [IPv6 ('::1', 9092, 0, 0)]>: setting socket option (6, 1, 1)
+14:48:40,323 <kafka.conn>[INFO]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+14:48:40,323 <kafka.conn>[INFO]: Probing node bootstrap-1 broker version
+14:48:40,324 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: established TCP connection
+14:48:40,324 <kafka.conn>[INFO]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+14:48:40,324 <kafka.client>[DEBUG]: Node bootstrap-1 connected
+14:48:40,325 <kafka.protocol.parser>[DEBUG]: Sending request ApiVersionRequest_v0()
+14:48:40,325 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 1: ApiVersionRequest_v0()
+14:48:40,441 <kafka.protocol.parser>[DEBUG]: Sending request MetadataRequest_v0(topics=[])
+14:48:40,441 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 2: MetadataRequest_v0(topics=[])
+14:48:40,442 <kafka.protocol.parser>[DEBUG]: Received correlation id: 1
+14:48:40,443 <kafka.protocol.parser>[DEBUG]: Processing response ApiVersionResponse_v0
+14:48:40,444 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 1 (118.89147758483887 ms): ApiVersionResponse_v0(error_code=0, api_versions=[(api_key=0, min_version=0, max_version=11), (api_key=1, min_version=0, max_version=16), (api_key=2, min_version=0, max_version=8), (api_key=3, min_version=0, max_version=12), (api_key=4, min_version=0, max_version=7), (api_key=5, min_version=0, max_version=4), (api_key=6, min_version=0, max_version=8), (api_key=7, min_version=0, max_version=3), (api_key=8, min_version=0, max_version=9), (api_key=9, min_version=0, max_version=9), (api_key=10, min_version=0, max_version=5), (api_key=11, min_version=0, max_version=9), (api_key=12, min_version=0, max_version=4), (api_key=13, min_version=0, max_version=5), (api_key=14, min_version=0, max_version=5), (api_key=15, min_version=0, max_version=5), (api_key=16, min_version=0, max_version=5), (api_key=17, min_version=0, max_version=1), (api_key=18, min_version=0, max_version=3), (api_key=19, min_version=0, max_version=7), (api_key=20, min_version=0, max_version=6), (api_key=21, min_version=0, max_version=2), (api_key=22, min_version=0, max_version=5), (api_key=23, min_version=0, max_version=4), (api_key=24, min_version=0, max_version=5), (api_key=25, min_version=0, max_version=4), (api_key=26, min_version=0, max_version=4), (api_key=27, min_version=0, max_version=1), (api_key=28, min_version=0, max_version=4), (api_key=29, min_version=0, max_version=3), (api_key=30, min_version=0, max_version=3), (api_key=31, min_version=0, max_version=3), (api_key=32, min_version=0, max_version=4), (api_key=33, min_version=0, max_version=2), (api_key=34, min_version=0, max_version=2), (api_key=35, min_version=0, max_version=4), (api_key=36, min_version=0, max_version=2), (api_key=37, min_version=0, max_version=3), (api_key=38, min_version=0, max_version=3), (api_key=39, min_version=0, max_version=2), (api_key=40, min_version=0, max_version=2), (api_key=41, min_version=0, max_version=3), (api_key=42, min_version=0, max_version=2), (api_key=43, min_version=0, max_version=2), (api_key=44, min_version=0, max_version=1), (api_key=45, min_version=0, max_version=0), (api_key=46, min_version=0, max_version=0), (api_key=47, min_version=0, max_version=0), (api_key=48, min_version=0, max_version=1), (api_key=49, min_version=0, max_version=1), (api_key=50, min_version=0, max_version=0), (api_key=51, min_version=0, max_version=0), (api_key=56, min_version=0, max_version=3), (api_key=57, min_version=0, max_version=1), (api_key=58, min_version=0, max_version=0), (api_key=60, min_version=0, max_version=1), (api_key=61, min_version=0, max_version=0), (api_key=65, min_version=0, max_version=0), (api_key=66, min_version=0, max_version=1), (api_key=67, min_version=0, max_version=0), (api_key=68, min_version=0, max_version=0), (api_key=69, min_version=0, max_version=0)])
+14:48:40,501 <kafka.protocol.parser>[DEBUG]: Received correlation id: 2
+14:48:40,502 <kafka.protocol.parser>[DEBUG]: Processing response MetadataResponse_v0
+14:48:40,502 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 2 (60.90402603149414 ms): MetadataResponse_v0(brokers=[(node_id=2, host='localhost', port=9093), (node_id=3, host='localhost', port=9094), (node_id=1, host='localhost', port=9092)], topics=[(error_code=0, topic='example_topic', partitions=[(error_code=0, partition=0, leader=3, replicas=[3], isr=[3])])])
+14:48:40,503 <kafka.conn>[INFO]: Broker version identified as 2.5.0
+14:48:40,504 <kafka.conn>[INFO]: Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+14:48:40,507 <kafka.metrics.metrics>[DEBUG]: Added sensor with name bytes-fetched
+14:48:40,508 <kafka.metrics.metrics>[DEBUG]: Added sensor with name records-fetched
+14:48:40,508 <kafka.metrics.metrics>[DEBUG]: Added sensor with name fetch-latency
+14:48:40,509 <kafka.metrics.metrics>[DEBUG]: Added sensor with name records-lag
+14:48:40,509 <kafka.metrics.metrics>[DEBUG]: Added sensor with name fetch-throttle-time
+14:48:40,509 <kafka.metrics.metrics>[DEBUG]: Added sensor with name heartbeat-latency
+14:48:40,510 <kafka.metrics.metrics>[DEBUG]: Added sensor with name join-latency
+14:48:40,510 <kafka.metrics.metrics>[DEBUG]: Added sensor with name sync-latency
+14:48:40,511 <kafka.metrics.metrics>[DEBUG]: Added sensor with name commit-latency
+14:48:40,512 <kafka.consumer.subscription_state>[INFO]: Updating subscribed topics to: ('example_topic',)
+14:48:40,512 <consumer>[DEBUG]: HDFS client is using URL: http://localhost:9870
+14:48:40,515 <hdfs.client>[INFO]: Instantiated <InsecureClient(url='http://localhost:9870')>.
+14:48:40,523 <consumer>[INFO]: Subscribed to Kafka topic and started consuming messages.
+14:48:40,525 <consumer>[DEBUG]: Polling messages from Kafka...
+14:48:40,527 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker bootstrap-1
+14:48:40,529 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:40,530 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 3: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:40,531 <kafka.client>[DEBUG]: Initializing connection to node bootstrap-0 for metadata request
+14:48:40,532 <kafka.client>[DEBUG]: Initiating connection to node bootstrap-0 at localhost:9094
+14:48:40,536 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-bootstrap-0.bytes-sent
+14:48:40,537 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-bootstrap-0.bytes-received
+14:48:40,537 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-bootstrap-0.latency
+14:48:40,538 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-0 host=localhost:9094 <disconnected> [unspecified None]>: creating new socket
+14:48:40,539 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-0 host=localhost:9094 <disconnected> [IPv6 ('::1', 9094, 0, 0)]>: setting socket option (6, 1, 1)
+14:48:40,540 <kafka.conn>[INFO]: <BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+14:48:40,542 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: established TCP connection
+14:48:40,543 <kafka.conn>[INFO]: <BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+14:48:40,543 <kafka.client>[DEBUG]: Node bootstrap-0 connected
+14:48:40,544 <kafka.client>[DEBUG]: Sending metadata request MetadataRequest_v1(topics=['example_topic']) to node bootstrap-0
+14:48:40,545 <kafka.protocol.parser>[DEBUG]: Sending request MetadataRequest_v1(topics=['example_topic'])
+14:48:40,545 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 1: MetadataRequest_v1(topics=['example_topic'])
+14:48:40,580 <kafka.protocol.parser>[DEBUG]: Received correlation id: 1
+14:48:40,580 <kafka.protocol.parser>[DEBUG]: Processing response MetadataResponse_v1
+14:48:40,581 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 1 (35.00485420227051 ms): MetadataResponse_v1(brokers=[(node_id=2, host='localhost', port=9093, rack=None), (node_id=3, host='localhost', port=9094, rack=None), (node_id=1, host='localhost', port=9092, rack=None)], controller_id=2, topics=[(error_code=0, topic='example_topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=3, replicas=[3], isr=[3])])])
+14:48:40,582 <kafka.cluster>[DEBUG]: Updated cluster metadata to ClusterMetadata(brokers: 3, topics: 1, groups: 0)
+14:48:40,630 <kafka.protocol.parser>[DEBUG]: Received correlation id: 3
+14:48:40,631 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:40,631 <kafka.conn>[DEBUG]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 3 (99.90668296813965 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:40,632 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:40,633 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:40,736 <kafka.client>[DEBUG]: Initiating connection to node 2 at localhost:9093
+14:48:40,736 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-2.bytes-sent
+14:48:40,737 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-2.bytes-received
+14:48:40,737 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-2.latency
+14:48:40,738 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <disconnected> [unspecified None]>: creating new socket
+14:48:40,738 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <disconnected> [IPv6 ('::1', 9093, 0, 0)]>: setting socket option (6, 1, 1)
+14:48:40,739 <kafka.conn>[INFO]: <BrokerConnection node_id=2 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: connecting to localhost:9093 [('::1', 9093, 0, 0) IPv6]
+14:48:40,739 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: established TCP connection
+14:48:40,740 <kafka.conn>[INFO]: <BrokerConnection node_id=2 host=localhost:9093 <connecting> [IPv6 ('::1', 9093, 0, 0)]>: Connection complete.
+14:48:40,740 <kafka.client>[DEBUG]: Node 2 connected
+14:48:40,740 <kafka.conn>[INFO]: <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+14:48:40,741 <kafka.conn>[INFO]: <BrokerConnection node_id=bootstrap-0 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+14:48:40,847 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:40,847 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:40,849 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 1: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:40,930 <kafka.protocol.parser>[DEBUG]: Received correlation id: 1
+14:48:40,932 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:40,933 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 1 (84.04064178466797 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:40,933 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:40,934 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:41,48 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:41,50 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,51 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 2: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,71 <kafka.protocol.parser>[DEBUG]: Received correlation id: 2
+14:48:41,73 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:41,73 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 2 (20.625591278076172 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,74 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,75 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:41,189 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:41,190 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,191 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 3: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,236 <kafka.protocol.parser>[DEBUG]: Received correlation id: 3
+14:48:41,236 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:41,237 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 3 (45.566558837890625 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,238 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,238 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:41,345 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:41,346 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,347 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 4: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,379 <kafka.protocol.parser>[DEBUG]: Received correlation id: 4
+14:48:41,380 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:41,381 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 4 (32.97281265258789 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,381 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,382 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:41,499 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:41,500 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,501 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 5: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,525 <kafka.protocol.parser>[DEBUG]: Received correlation id: 5
+14:48:41,526 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:41,527 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 5 (25.000572204589844 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,528 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,529 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:41,638 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:41,641 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,642 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 6: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,652 <kafka.protocol.parser>[DEBUG]: Received correlation id: 6
+14:48:41,654 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:41,656 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 6 (12.999773025512695 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,658 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,658 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:41,764 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:41,765 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,766 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 7: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,793 <kafka.protocol.parser>[DEBUG]: Received correlation id: 7
+14:48:41,794 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:41,795 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 7 (29.320716857910156 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,796 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,797 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:41,903 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:41,904 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,904 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 8: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:41,934 <kafka.protocol.parser>[DEBUG]: Received correlation id: 8
+14:48:41,935 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:41,937 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 8 (31.61764144897461 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,937 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:41,938 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:42,40 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:42,41 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,42 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 9: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,68 <kafka.protocol.parser>[DEBUG]: Received correlation id: 9
+14:48:42,69 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:42,69 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 9 (26.620864868164062 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,70 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,71 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:42,180 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:42,180 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,181 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 10: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,205 <kafka.protocol.parser>[DEBUG]: Received correlation id: 10
+14:48:42,206 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:42,208 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 10 (26.0009765625 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,209 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,209 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:42,320 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:42,321 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,322 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 11: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,341 <kafka.protocol.parser>[DEBUG]: Received correlation id: 11
+14:48:42,342 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:42,343 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 11 (19.24443244934082 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,343 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,344 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:42,459 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:42,460 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,461 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 12: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,489 <kafka.protocol.parser>[DEBUG]: Received correlation id: 12
+14:48:42,490 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:42,491 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 12 (28.987646102905273 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,492 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,492 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:42,600 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:42,602 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,604 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 13: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,613 <kafka.protocol.parser>[DEBUG]: Received correlation id: 13
+14:48:42,615 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:42,616 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 13 (12.002229690551758 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,616 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,617 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:42,725 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:42,727 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,728 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 14: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,749 <kafka.protocol.parser>[DEBUG]: Received correlation id: 14
+14:48:42,750 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:42,751 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 14 (21.971464157104492 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,752 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,753 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:42,864 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:42,865 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,866 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 15: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:42,905 <kafka.protocol.parser>[DEBUG]: Received correlation id: 15
+14:48:42,906 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:42,906 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 15 (39.40987586975098 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,907 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:42,908 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:43,22 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:43,27 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,28 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 16: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,50 <kafka.protocol.parser>[DEBUG]: Received correlation id: 16
+14:48:43,52 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:43,53 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 16 (23.99897575378418 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,54 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,55 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:43,162 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:43,162 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,163 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 17: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,180 <kafka.protocol.parser>[DEBUG]: Received correlation id: 17
+14:48:43,181 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:43,182 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 17 (17.09890365600586 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,182 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,183 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:43,286 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:43,287 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,287 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 18: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,295 <kafka.protocol.parser>[DEBUG]: Received correlation id: 18
+14:48:43,296 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:43,297 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 18 (9.000301361083984 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,297 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,298 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:43,411 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:43,413 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,413 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 19: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,444 <kafka.protocol.parser>[DEBUG]: Received correlation id: 19
+14:48:43,445 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:43,446 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 19 (32.611846923828125 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,446 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,447 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:43,553 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:43,555 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,556 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 20: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,591 <kafka.protocol.parser>[DEBUG]: Received correlation id: 20
+14:48:43,592 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:43,592 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 20 (35.318613052368164 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,593 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+14:48:43,593 <kafka.coordinator>[DEBUG]: Group Coordinator Not Available; retry
+14:48:43,708 <kafka.coordinator>[DEBUG]: Sending group coordinator request for group group1 to broker 2
+14:48:43,709 <kafka.protocol.parser>[DEBUG]: Sending request GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,710 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 21: GroupCoordinatorRequest_v0(consumer_group='group1')
+14:48:43,757 <kafka.protocol.parser>[DEBUG]: Received correlation id: 21
+14:48:43,758 <kafka.protocol.parser>[DEBUG]: Processing response GroupCoordinatorResponse_v0
+14:48:43,758 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 21 (48.47431182861328 ms): GroupCoordinatorResponse_v0(error_code=0, coordinator_id=3, host='localhost', port=9094)
+14:48:43,760 <kafka.coordinator>[DEBUG]: Received group coordinator response GroupCoordinatorResponse_v0(error_code=0, coordinator_id=3, host='localhost', port=9094)
+14:48:43,760 <kafka.cluster>[DEBUG]: Updating coordinator for group1: GroupCoordinatorResponse_v0(error_code=0, coordinator_id=3, host='localhost', port=9094)
+14:48:43,761 <kafka.cluster>[INFO]: Group coordinator for group1 is BrokerMetadata(nodeId='coordinator-3', host='localhost', port=9094, rack=None)
+14:48:43,762 <kafka.coordinator>[INFO]: Discovered coordinator coordinator-3 for group group1
+14:48:43,762 <kafka.coordinator>[INFO]: Starting new heartbeat thread
+14:48:43,767 <kafka.coordinator>[DEBUG]: Heartbeat thread started
+14:48:43,768 <kafka.coordinator.consumer>[INFO]: Revoking previously assigned partitions set() for group group1
+14:48:43,770 <kafka.client>[DEBUG]: Initiating connection to node coordinator-3 at localhost:9094
+14:48:43,770 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-coordinator-3.bytes-sent
+14:48:43,771 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-coordinator-3.bytes-received
+14:48:43,772 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-coordinator-3.latency
+14:48:43,774 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <disconnected> [unspecified None]>: creating new socket
+14:48:43,775 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <disconnected> [IPv6 ('::1', 9094, 0, 0)]>: setting socket option (6, 1, 1)
+14:48:43,775 <kafka.conn>[INFO]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+14:48:43,777 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: established TCP connection
+14:48:43,777 <kafka.conn>[INFO]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+14:48:43,778 <kafka.client>[DEBUG]: Node coordinator-3 connected
+14:48:43,880 <kafka.coordinator>[INFO]: (Re-)joining group group1
+14:48:43,882 <kafka.coordinator>[DEBUG]: Sending JoinGroup (JoinGroupRequest_v2(group='group1', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x00')])) to coordinator coordinator-3
+14:48:43,884 <kafka.protocol.parser>[DEBUG]: Sending request JoinGroupRequest_v2(group='group1', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x00')])
+14:48:43,885 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 1: JoinGroupRequest_v2(group='group1', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x00')])
+14:48:47,51 <kafka.protocol.parser>[DEBUG]: Received correlation id: 1
+14:48:47,52 <kafka.protocol.parser>[DEBUG]: Processing response JoinGroupResponse_v2
+14:48:47,56 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 1 (3169.86346244812 ms): JoinGroupResponse_v2(throttle_time_ms=0, error_code=0, generation_id=1, group_protocol='range', leader_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', members=[(member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x00')])
+14:48:47,58 <kafka.coordinator>[DEBUG]: Received successful JoinGroup response for group group1: JoinGroupResponse_v2(throttle_time_ms=0, error_code=0, generation_id=1, group_protocol='range', leader_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', members=[(member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x00')])
+14:48:47,59 <kafka.coordinator>[INFO]: Elected group leader -- performing partition assignments using range
+14:48:47,60 <kafka.coordinator.consumer>[DEBUG]: Performing assignment for group group1 using strategy range with subscriptions {'kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200': ConsumerProtocolMemberMetadata(version=0, subscription=['example_topic'], user_data=b'')}
+14:48:47,60 <kafka.coordinator.consumer>[DEBUG]: Finished assignment for group group1: {'kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200': ConsumerProtocolMemberAssignment(version=0, assignment=[(topic='example_topic', partitions=[0])], user_data=b'')}
+14:48:47,62 <kafka.coordinator>[DEBUG]: Sending leader SyncGroup for group group1 to coordinator coordinator-3: SyncGroupRequest_v1(group='group1', generation_id=1, member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', group_assignment=[(member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+14:48:47,63 <kafka.protocol.parser>[DEBUG]: Sending request SyncGroupRequest_v1(group='group1', generation_id=1, member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', group_assignment=[(member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+14:48:47,63 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 2: SyncGroupRequest_v1(group='group1', generation_id=1, member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', group_assignment=[(member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+14:48:47,65 <kafka.client>[DEBUG]: Sending metadata request MetadataRequest_v1(topics=['example_topic']) to node 2
+14:48:47,66 <kafka.protocol.parser>[DEBUG]: Sending request MetadataRequest_v1(topics=['example_topic'])
+14:48:47,67 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Request 22: MetadataRequest_v1(topics=['example_topic'])
+14:48:47,72 <kafka.protocol.parser>[DEBUG]: Received correlation id: 22
+14:48:47,73 <kafka.protocol.parser>[DEBUG]: Processing response MetadataResponse_v1
+14:48:47,74 <kafka.conn>[DEBUG]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]> Response 22 (6.007194519042969 ms): MetadataResponse_v1(brokers=[(node_id=2, host='localhost', port=9093, rack=None), (node_id=3, host='localhost', port=9094, rack=None), (node_id=1, host='localhost', port=9092, rack=None)], controller_id=2, topics=[(error_code=0, topic='example_topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=3, replicas=[3], isr=[3])])])
+14:48:47,75 <kafka.cluster>[DEBUG]: Updated cluster metadata to ClusterMetadata(brokers: 3, topics: 1, groups: 1)
+14:48:47,168 <kafka.protocol.parser>[DEBUG]: Received correlation id: 2
+14:48:47,168 <kafka.protocol.parser>[DEBUG]: Processing response SyncGroupResponse_v1
+14:48:47,169 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 2 (103.99246215820312 ms): SyncGroupResponse_v1(throttle_time_ms=0, error_code=0, member_assignment=b'\x00\x00\x00\x00\x00\x01\x00\rexample_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')
+14:48:47,169 <kafka.coordinator>[INFO]: Successfully joined group group1 with generation 1
+14:48:47,170 <kafka.consumer.subscription_state>[INFO]: Updated partition assignment: [TopicPartition(topic='example_topic', partition=0)]
+14:48:47,170 <kafka.coordinator.consumer>[INFO]: Setting newly assigned partitions {TopicPartition(topic='example_topic', partition=0)} for group group1
+14:48:47,171 <kafka.coordinator.consumer>[DEBUG]: Group group1 fetching committed offsets for partitions: {TopicPartition(topic='example_topic', partition=0)}
+14:48:47,172 <kafka.protocol.parser>[DEBUG]: Sending request OffsetFetchRequest_v1(consumer_group='group1', topics=[(topic='example_topic', partitions=[0])])
+14:48:47,173 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 3: OffsetFetchRequest_v1(consumer_group='group1', topics=[(topic='example_topic', partitions=[0])])
+14:48:47,199 <kafka.protocol.parser>[DEBUG]: Received correlation id: 3
+14:48:47,199 <kafka.protocol.parser>[DEBUG]: Processing response OffsetFetchResponse_v1
+14:48:47,200 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 3 (27.062416076660156 ms): OffsetFetchResponse_v1(topics=[(topic='example_topic', partitions=[(partition=0, offset=-1, metadata='', error_code=0)])])
+14:48:47,200 <kafka.coordinator.consumer>[DEBUG]: Group group1 has no committed offset for partition TopicPartition(topic='example_topic', partition=0)
+14:48:47,201 <kafka.consumer.fetcher>[DEBUG]: Resetting offset for partition TopicPartition(topic='example_topic', partition=0) to earliest offset.
+14:48:47,201 <kafka.client>[DEBUG]: Initiating connection to node 3 at localhost:9094
+14:48:47,202 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-3.bytes-sent
+14:48:47,202 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-3.bytes-received
+14:48:47,203 <kafka.metrics.metrics>[DEBUG]: Added sensor with name node-3.latency
+14:48:47,204 <kafka.conn>[DEBUG]: <BrokerConnection node_id=3 host=localhost:9094 <disconnected> [unspecified None]>: creating new socket
+14:48:47,204 <kafka.conn>[DEBUG]: <BrokerConnection node_id=3 host=localhost:9094 <disconnected> [IPv6 ('::1', 9094, 0, 0)]>: setting socket option (6, 1, 1)
+14:48:47,205 <kafka.conn>[INFO]: <BrokerConnection node_id=3 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: connecting to localhost:9094 [('::1', 9094, 0, 0) IPv6]
+14:48:47,205 <kafka.conn>[DEBUG]: <BrokerConnection node_id=3 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: established TCP connection
+14:48:47,206 <kafka.conn>[INFO]: <BrokerConnection node_id=3 host=localhost:9094 <connecting> [IPv6 ('::1', 9094, 0, 0)]>: Connection complete.
+14:48:47,206 <kafka.client>[DEBUG]: Node 3 connected
+14:48:47,319 <kafka.protocol.parser>[DEBUG]: Sending request OffsetRequest_v1(replica_id=-1, topics=[(topic='example_topic', partitions=[(partition=0, timestamp=-2)])])
+14:48:47,323 <kafka.conn>[DEBUG]: <BrokerConnection node_id=3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 1: OffsetRequest_v1(replica_id=-1, topics=[(topic='example_topic', partitions=[(partition=0, timestamp=-2)])])
+14:48:47,356 <kafka.protocol.parser>[DEBUG]: Received correlation id: 1
+14:48:47,358 <kafka.protocol.parser>[DEBUG]: Processing response OffsetResponse_v1
+14:48:47,360 <kafka.conn>[DEBUG]: <BrokerConnection node_id=3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 1 (33.90240669250488 ms): OffsetResponse_v1(topics=[(topic='example_topic', partitions=[(partition=0, error_code=0, timestamp=-1, offset=0)])])
+14:48:47,361 <kafka.consumer.fetcher>[DEBUG]: Handling ListOffsetResponse response for TopicPartition(topic='example_topic', partition=0). Fetched offset 0, timestamp -1
+14:48:47,362 <kafka.consumer.fetcher>[DEBUG]: Adding fetch request for partition TopicPartition(topic='example_topic', partition=0) at offset 0
+14:48:47,363 <kafka.consumer.fetcher>[DEBUG]: Sending FetchRequest to node 3
+14:48:47,363 <kafka.protocol.parser>[DEBUG]: Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='example_topic', partitions=[(partition=0, offset=0, max_bytes=1048576)])])
+14:48:47,364 <kafka.conn>[DEBUG]: <BrokerConnection node_id=3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 2: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='example_topic', partitions=[(partition=0, offset=0, max_bytes=1048576)])])
+14:48:47,380 <consumer>[INFO]: No messages received in the last 10 seconds.
+14:48:47,383 <consumer>[DEBUG]: Polling messages from Kafka...
+14:48:47,409 <kafka.protocol.parser>[DEBUG]: Received correlation id: 2
+14:48:47,409 <kafka.protocol.parser>[DEBUG]: Processing response FetchResponse_v4
+14:48:47,418 <kafka.conn>[DEBUG]: <BrokerConnection node_id=3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 2 (53.51424217224121 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='example_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x052\x00\x00\x00\x00\x02\xf5\xe9d\xe1\x00\x00\x00\x00\x00\x00\x00\x00\x01\x93\xaad\x15w\x00\x00\x01\x93\xaad\x15w\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x01\xfe\x13\x00\x00\x00\x01\xf0\x13{"timestamp": 1733730506103, "z...')])])
+14:48:47,420 <kafka.consumer.fetcher>[DEBUG]: Adding fetched record for partition TopicPartition(topic='example_topic', partition=0) with offset 0 to buffered record list
+14:48:47,422 <kafka.metrics.metrics>[DEBUG]: Added sensor with name topic.example_topic.bytes-fetched
+14:48:47,423 <kafka.metrics.metrics>[DEBUG]: Added sensor with name topic.example_topic.records-fetched
+14:48:47,424 <kafka.consumer.fetcher>[DEBUG]: Adding fetch request for partition TopicPartition(topic='example_topic', partition=0) at offset 6
+14:48:47,425 <kafka.consumer.fetcher>[DEBUG]: Sending FetchRequest to node 3
+14:48:47,425 <kafka.protocol.parser>[DEBUG]: Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='example_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+14:48:47,426 <kafka.conn>[DEBUG]: <BrokerConnection node_id=3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 3: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='example_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+14:48:47,427 <consumer>[INFO]: Received 6 messages from partition 0
+14:48:47,427 <consumer>[DEBUG]: Received message: {'timestamp': 1733730506103, 'zpid': 269421043, 'homeStatus': 'FOR_SALE', 'detailUrl': 'https://www.zillow.com/homedetails/37278-Vine-Dr-Woodland Hills-CA-91364/', 'address': '37278 Vine Dr, Woodland Hills, CA 91364', 'streetAddress': '37278 Vine Dr', 'city': 'Woodland Hills', 'state': 'CA', 'country': 'USA', 'zipcode': '91364', 'latitude': 34.183486965984436, 'longitude': -118.6397667307382, 'homeType': 'MULTI_FAMILY', 'price': 4420297, 'currency': 'USD', 'zestimate': 4458372, 'rentZestimate': 17681, 'taxAssessedValue': 3094207, 'lotAreaValue': 6.1037, 'lotAreaUnit': 'acres', 'bathrooms': 7, 'bedrooms': 5, 'livingArea': 3229, 'daysOnZillow': 45, 'isFeatured': True, 'isPreforeclosureAuction': False, 'timeOnZillow': 595500, 'isNonOwnerOccupied': True, 'isPremierBuilder': False, 'isZillowOwned': False, 'isShowcaseListing': False, 'imgSrc': 'https://photos.zillowstatic.com/fp/e3f4e7c1267034c981012d942a911a64-p_e.jpg', 'hasImage': True, 'brokerName': 'The Agency', 'listingSubType.is_FSBA': True, 'priceChange': None, 'datePriceChanged': 1735631306103, 'openHouse': 'Sat. 9pm-8pm', 'priceReduction': None, 'unit': None, 'listingSubType.is_openHouse': True, 'newConstructionType': 'NEW_CONSTRUCTION_TYPE_OTHER', 'listingSubType.is_newHome': True, 'videoCount': 2}
+14:48:47,428 <consumer>[DEBUG]: Message written to temp file: C:\Users\PHAMGI~1\AppData\Local\Temp\tmpdnlln7we
+14:48:47,440 <consumer>[DEBUG]: Received message: {'timestamp': 1733730508110, 'zpid': 284784077, 'homeStatus': 'FOR_SALE', 'detailUrl': 'https://www.zillow.com/homedetails/50860-Beverly-Ave-Santa Monica-CA-90401/', 'address': '50860 Beverly Ave, Santa Monica, CA 90401', 'streetAddress': '50860 Beverly Ave', 'city': 'Santa Monica', 'state': 'CA', 'country': 'USA', 'zipcode': '90401', 'latitude': 33.98174461447958, 'longitude': -118.4488570503466, 'homeType': 'SINGLE_FAMILY', 'price': 577685, 'currency': 'USD', 'zestimate': 591151, 'rentZestimate': 2310, 'taxAssessedValue': 404379, 'lotAreaValue': 7.8462, 'lotAreaUnit': 'acres', 'bathrooms': 13, 'bedrooms': 12, 'livingArea': 9462, 'daysOnZillow': 49, 'isFeatured': False, 'isPreforeclosureAuction': False, 'timeOnZillow': 11289236, 'isNonOwnerOccupied': True, 'isPremierBuilder': False, 'isZillowOwned': False, 'isShowcaseListing': True, 'imgSrc': 'https://photos.zillowstatic.com/fp/ab2cb80bb6691547be9d260407f37e60-p_e.jpg', 'hasImage': True, 'brokerName': "Christie's International Real Estate", 'listingSubType.is_FSBA': True, 'priceChange': None, 'datePriceChanged': 1731224908110, 'openHouse': 'Sat. 8pm-8pm', 'priceReduction': None, 'unit': None, 'listingSubType.is_openHouse': True, 'newConstructionType': None, 'listingSubType.is_newHome': True, 'videoCount': 2}
+14:48:47,446 <consumer>[DEBUG]: Message written to temp file: C:\Users\PHAMGI~1\AppData\Local\Temp\tmpdnlln7we
+14:48:47,451 <consumer>[DEBUG]: Received message: {'timestamp': 1733730510117, 'zpid': 437807785, 'homeStatus': 'FOR_SALE', 'detailUrl': 'https://www.zillow.com/homedetails/16009-Hollywood-Dr-Sherman Oaks-CA-91403/', 'address': '16009 Hollywood Dr, Sherman Oaks, CA 91403', 'streetAddress': '16009 Hollywood Dr', 'city': 'Sherman Oaks', 'state': 'CA', 'country': 'USA', 'zipcode': '91403', 'latitude': 34.17212794100124, 'longitude': -118.47123800252511, 'homeType': 'MANUFACTURED', 'price': 8371088, 'currency': 'USD', 'zestimate': 7650201, 'rentZestimate': 33484, 'taxAssessedValue': 5859761, 'lotAreaValue': 6.5826, 'lotAreaUnit': 'acres', 'bathrooms': 1, 'bedrooms': 4, 'livingArea': 2580, 'daysOnZillow': 13, 'isFeatured': False, 'isPreforeclosureAuction': False, 'timeOnZillow': 10976022, 'isNonOwnerOccupied': True, 'isPremierBuilder': False, 'isZillowOwned': False, 'isShowcaseListing': False, 'imgSrc': 'https://photos.zillowstatic.com/fp/9eea8808e4acedcb6223954c4a75e307-p_e.jpg', 'hasImage': True, 'brokerName': 'Rodeo Realty', 'listingSubType.is_FSBA': True, 'priceChange': None, 'datePriceChanged': 1732261710117, 'openHouse': 'Sat. 6pm-5pm', 'priceReduction': None, 'unit': None, 'listingSubType.is_openHouse': True, 'newConstructionType': 'NEW_CONSTRUCTION_TYPE_OTHER', 'listingSubType.is_newHome': False, 'videoCount': 2}
+14:48:47,452 <consumer>[DEBUG]: Message written to temp file: C:\Users\PHAMGI~1\AppData\Local\Temp\tmpdnlln7we
+14:48:47,455 <consumer>[DEBUG]: Received message: {'timestamp': 1733730512127, 'zpid': 175690075, 'homeStatus': 'FOR_SALE', 'detailUrl': 'https://www.zillow.com/homedetails/36353-Venice-Dr-Glendale-CA-91201/', 'address': '36353 Venice Dr, Glendale, CA 91201', 'streetAddress': '36353 Venice Dr', 'city': 'Glendale', 'state': 'CA', 'country': 'USA', 'zipcode': '91201', 'latitude': 34.106436552093754, 'longitude': -118.22116942000889, 'homeType': 'MANUFACTURED', 'price': 425599, 'currency': 'USD', 'zestimate': 430606, 'rentZestimate': 1702, 'taxAssessedValue': 297919, 'lotAreaValue': 0.6893, 'lotAreaUnit': 'acres', 'bathrooms': 4, 'bedrooms': 2, 'livingArea': 1541, 'daysOnZillow': 30, 'isFeatured': False, 'isPreforeclosureAuction': False, 'timeOnZillow': 1977603, 'isNonOwnerOccupied': True, 'isPremierBuilder': False, 'isZillowOwned': False, 'isShowcaseListing': False, 'imgSrc': 'https://photos.zillowstatic.com/fp/0cd4fcb6fd896b83fa42cf0235215ea3-p_e.jpg', 'hasImage': True, 'brokerName': 'Rodeo Realty', 'listingSubType.is_FSBA': True, 'priceChange': -31269, 'datePriceChanged': 1733125712127, 'openHouse': None, 'priceReduction': None, 'unit': None, 'listingSubType.is_openHouse': True, 'newConstructionType': 'NEW_CONSTRUCTION_TYPE_OTHER', 'listingSubType.is_newHome': False, 'videoCount': 1}
+14:48:47,458 <consumer>[DEBUG]: Message written to temp file: C:\Users\PHAMGI~1\AppData\Local\Temp\tmpdnlln7we
+14:48:47,462 <consumer>[DEBUG]: Received message: {'timestamp': 1733730514132, 'zpid': 404326948, 'homeStatus': 'FOR_SALE', 'detailUrl': 'https://www.zillow.com/homedetails/59452-Venice-Way-Los Angeles-CA-90001/', 'address': '59452 Venice Way, Los Angeles, CA 90001', 'streetAddress': '59452 Venice Way', 'city': 'Los Angeles', 'state': 'CA', 'country': 'USA', 'zipcode': '90001', 'latitude': 34.054500075625015, 'longitude': -118.23316996031683, 'homeType': 'SINGLE_FAMILY', 'price': 3804943, 'currency': 'USD', 'zestimate': 3507641, 'rentZestimate': 15219, 'taxAssessedValue': 2663460, 'lotAreaValue': 4.154, 'lotAreaUnit': 'acres', 'bathrooms': 7, 'bedrooms': 11, 'livingArea': 7822, 'daysOnZillow': 92, 'isFeatured': False, 'isPreforeclosureAuction': False, 'timeOnZillow': 9559892, 'isNonOwnerOccupied': True, 'isPremierBuilder': False, 'isZillowOwned': False, 'isShowcaseListing': True, 'imgSrc': 'https://photos.zillowstatic.com/fp/661866606607242e62a0ca15274d935f-p_e.jpg', 'hasImage': True, 'brokerName': 'Douglas Elliman', 'listingSubType.is_FSBA': True, 'priceChange': None, 'datePriceChanged': 1731570514132, 'openHouse': 'Sat. 7pm-7pm', 'priceReduction': None, 'unit': None, 'listingSubType.is_openHouse': True, 'newConstructionType': None, 'listingSubType.is_newHome': False, 'videoCount': None}
+14:48:47,463 <consumer>[DEBUG]: Message written to temp file: C:\Users\PHAMGI~1\AppData\Local\Temp\tmpdnlln7we
+14:48:47,466 <consumer>[DEBUG]: Received message: {'timestamp': 1733730516145, 'zpid': 428401373, 'homeStatus': 'FOR_SALE', 'detailUrl': 'https://www.zillow.com/homedetails/54853-Elm-Dr-Beverly Hills-CA-90210/', 'address': '54853 Elm Dr, Beverly Hills, CA 90210', 'streetAddress': '54853 Elm Dr', 'city': 'Beverly Hills', 'state': 'CA', 'country': 'USA', 'zipcode': '90210', 'latitude': 34.04723607363765, 'longitude': -118.42496987064061, 'homeType': 'MULTI_FAMILY', 'price': 703873, 'currency': 'USD', 'zestimate': 748935, 'rentZestimate': 2815, 'taxAssessedValue': 492711, 'lotAreaValue': 0.724, 'lotAreaUnit': 'acres', 'bathrooms': 8, 'bedrooms': 6, 'livingArea': 2863, 'daysOnZillow': 175, 'isFeatured': False, 'isPreforeclosureAuction': False, 'timeOnZillow': 10225063, 'isNonOwnerOccupied': True, 'isPremierBuilder': False, 'isZillowOwned': False, 'isShowcaseListing': True, 'imgSrc': 'https://photos.zillowstatic.com/fp/a68a6bdfc7e7db78d29e2e778b5d05df-p_e.jpg', 'hasImage': True, 'brokerName': 'Berkshire Hathaway HomeServices', 'listingSubType.is_FSBA': True, 'priceChange': 4145, 'datePriceChanged': 1736236116145, 'openHouse': None, 'priceReduction': None, 'unit': None, 'listingSubType.is_openHouse': True, 'newConstructionType': 'BUILDER_SPEC', 'listingSubType.is_newHome': True, 'videoCount': 1}
+14:48:47,467 <consumer>[DEBUG]: Message written to temp file: C:\Users\PHAMGI~1\AppData\Local\Temp\tmpdnlln7we
+14:48:47,471 <consumer>[INFO]: Starting flush file C:\Users\PHAMGI~1\AppData\Local\Temp\tmpdnlln7we to HDFS...
+14:48:47,472 <consumer>[DEBUG]: Uploading to HDFS URL: http://localhost:9870/stockData/2024/12/9/stockData.1733730527.json
+14:48:47,478 <hdfs.client>[INFO]: Uploading 'C:\\Users\\PHAMGI~1\\AppData\\Local\\Temp\\tmpdnlln7we' to '/stockData/2024/12/9/stockData.1733730527.json'.
+14:48:47,480 <hdfs.client>[DEBUG]: Resolved path '/stockData/2024/12/9/stockData.1733730527.json' to '/stockData/2024/12/9/stockData.1733730527.json'.
+14:48:47,480 <hdfs.client>[INFO]: Listing '/stockData/2024/12/9/stockData.1733730527.json'.
+14:48:47,481 <hdfs.client>[DEBUG]: Resolved path '/stockData/2024/12/9/stockData.1733730527.json' to '/stockData/2024/12/9/stockData.1733730527.json'.
+14:48:47,481 <hdfs.client>[DEBUG]: Resolved path '/stockData/2024/12/9/stockData.1733730527.json' to '/stockData/2024/12/9/stockData.1733730527.json'.
+14:48:47,491 <urllib3.connectionpool>[DEBUG]: Starting new HTTP connection (1): localhost:9870
+14:48:47,972 <kafka.protocol.parser>[DEBUG]: Received correlation id: 3
+14:48:47,973 <kafka.protocol.parser>[DEBUG]: Processing response FetchResponse_v4
+14:48:47,973 <kafka.conn>[DEBUG]: <BrokerConnection node_id=3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 3 (546.9214916229248 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='example_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+14:48:49,903 <urllib3.connectionpool>[DEBUG]: http://localhost:9870 "GET /webhdfs/v1/stockData/2024/12/9/stockData.1733730527.json?user.name=root&op=LISTSTATUS HTTP/11" 404 None
+14:48:49,904 <hdfs.client>[DEBUG]: Uploading 1 files using 1 thread(s).
+14:48:49,904 <hdfs.client>[DEBUG]: Uploading 'C:\\Users\\PHAMGI~1\\AppData\\Local\\Temp\\tmpdnlln7we' to '/stockData/2024/12/9/stockData.1733730527.json'.
+14:48:49,920 <hdfs.client>[INFO]: Writing to '/stockData/2024/12/9/stockData.1733730527.json'.
+14:48:49,921 <hdfs.client>[DEBUG]: Resolved path '/stockData/2024/12/9/stockData.1733730527.json' to '/stockData/2024/12/9/stockData.1733730527.json'.
+14:48:49,931 <urllib3.connectionpool>[DEBUG]: http://localhost:9870 "PUT /webhdfs/v1/stockData/2024/12/9/stockData.1733730527.json?user.name=root&overwrite=False&op=CREATE HTTP/11" 307 0
+14:48:49,933 <urllib3.connectionpool>[DEBUG]: Starting new HTTP connection (1): datanode-1:9864
+14:48:50,265 <kafka.coordinator>[DEBUG]: Heartbeat: group1[1] kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200
+14:48:50,265 <kafka.protocol.parser>[DEBUG]: Sending request HeartbeatRequest_v1(group='group1', generation_id=1, member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200')
+14:48:50,266 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 4: HeartbeatRequest_v1(group='group1', generation_id=1, member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200')
+14:48:50,375 <kafka.protocol.parser>[DEBUG]: Received correlation id: 4
+14:48:50,375 <kafka.protocol.parser>[DEBUG]: Processing response HeartbeatResponse_v1
+14:48:50,375 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 4 (109.56573486328125 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+14:48:50,376 <kafka.coordinator>[DEBUG]: Received successful heartbeat response for group group1
+14:48:53,332 <kafka.coordinator>[DEBUG]: Heartbeat: group1[1] kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200
+14:48:53,332 <kafka.protocol.parser>[DEBUG]: Sending request HeartbeatRequest_v1(group='group1', generation_id=1, member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200')
+14:48:53,332 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 5: HeartbeatRequest_v1(group='group1', generation_id=1, member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200')
+14:48:53,444 <kafka.protocol.parser>[DEBUG]: Received correlation id: 5
+14:48:53,444 <kafka.protocol.parser>[DEBUG]: Processing response HeartbeatResponse_v1
+14:48:53,445 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 5 (112.66255378723145 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+14:48:53,445 <kafka.coordinator>[DEBUG]: Received successful heartbeat response for group group1
+14:48:56,402 <kafka.coordinator>[DEBUG]: Heartbeat: group1[1] kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200
+14:48:56,402 <kafka.protocol.parser>[DEBUG]: Sending request HeartbeatRequest_v1(group='group1', generation_id=1, member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200')
+14:48:56,403 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 6: HeartbeatRequest_v1(group='group1', generation_id=1, member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200')
+14:48:56,512 <kafka.protocol.parser>[DEBUG]: Received correlation id: 6
+14:48:56,513 <kafka.protocol.parser>[DEBUG]: Processing response HeartbeatResponse_v1
+14:48:56,514 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 6 (109.98868942260742 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+14:48:56,515 <kafka.coordinator>[DEBUG]: Received successful heartbeat response for group group1
+14:48:56,762 <hdfs.client>[ERROR]: Error while uploading. Attempting cleanup.
+Traceback (most recent call last):
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\PHAM GIA KHANH\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\urllib3\connection.py", line 441, in request
+    self.endheaders()
+  File "C:\Users\PHAM GIA KHANH\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\PHAM GIA KHANH\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Users\PHAM GIA KHANH\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\urllib3\connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\urllib3\connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPConnection object at 0x0000021601FB2B30>: Failed to resolve 'datanode-1' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='datanode-1', port=9864): Max retries exceeded with url: /webhdfs/v1/stockData/2024/12/9/stockData.1733730527.json?op=CREATE&user.name=root&namenoderpcaddress=namenode:9000&createflag=&createparent=true&overwrite=false&user.name=root (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000021601FB2B30>: Failed to resolve 'datanode-1' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\hdfs\client.py", line 643, in upload
+    _upload(path_tuple)
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\hdfs\client.py", line 574, in _upload
+    self.write(_temp_path, wrap(reader, chunk_size, progress), **kwargs)
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\hdfs\client.py", line 520, in write
+    consumer(data)
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\hdfs\client.py", line 509, in consumer
+    res = self._request(
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\hdfs\client.py", line 209, in _request
+    return self._session.request(
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\PHAM GIA KHANH\.virtualenvs\django-7B6FDxTg\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='datanode-1', port=9864): Max retries exceeded with url: /webhdfs/v1/stockData/2024/12/9/stockData.1733730527.json?op=CREATE&user.name=root&namenoderpcaddress=namenode:9000&createflag=&createparent=true&overwrite=false&user.name=root (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000021601FB2B30>: Failed to resolve 'datanode-1' ([Errno 11001] getaddrinfo failed)"))
+14:48:56,772 <hdfs.client>[INFO]: Deleting '/stockData/2024/12/9/stockData.1733730527.json' recursively.
+14:48:56,772 <hdfs.client>[DEBUG]: Resolved path '/stockData/2024/12/9/stockData.1733730527.json' to '/stockData/2024/12/9/stockData.1733730527.json'.
+14:48:56,803 <urllib3.connectionpool>[DEBUG]: http://localhost:9870 "DELETE /webhdfs/v1/stockData/2024/12/9/stockData.1733730527.json?user.name=root&recursive=True&op=DELETE HTTP/11" 200 None
+14:48:56,804 <consumer>[ERROR]: Failed to upload C:\Users\PHAMGI~1\AppData\Local\Temp\tmpdnlln7we to HDFS: HTTPConnectionPool(host='datanode-1', port=9864): Max retries exceeded with url: /webhdfs/v1/stockData/2024/12/9/stockData.1733730527.json?op=CREATE&user.name=root&namenoderpcaddress=namenode:9000&createflag=&createparent=true&overwrite=false&user.name=root (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000021601FB2B30>: Failed to resolve 'datanode-1' ([Errno 11001] getaddrinfo failed)"))
+14:48:56,804 <consumer>[ERROR]: An error occurred in the consumer loop: HTTPConnectionPool(host='datanode-1', port=9864): Max retries exceeded with url: /webhdfs/v1/stockData/2024/12/9/stockData.1733730527.json?op=CREATE&user.name=root&namenoderpcaddress=namenode:9000&createflag=&createparent=true&overwrite=false&user.name=root (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000021601FB2B30>: Failed to resolve 'datanode-1' ([Errno 11001] getaddrinfo failed)"))
+14:48:56,805 <consumer>[INFO]: Temp file C:\Users\PHAMGI~1\AppData\Local\Temp\tmpdnlln7we closed.
+14:48:56,805 <kafka.consumer.group>[DEBUG]: Closing the KafkaConsumer.
+14:48:56,805 <kafka.coordinator>[INFO]: Stopping heartbeat thread
+14:48:56,805 <kafka.coordinator>[DEBUG]: Heartbeat thread closed
+14:48:56,806 <kafka.coordinator>[INFO]: Leaving consumer group (group1).
+14:48:56,806 <kafka.protocol.parser>[DEBUG]: Sending request LeaveGroupRequest_v1(group='group1', member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200')
+14:48:56,806 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Request 7: LeaveGroupRequest_v1(group='group1', member_id='kafka-python-2.0.2-1363bcff-3391-48e3-a0cc-4fb3386cf200')
+14:48:56,825 <kafka.protocol.parser>[DEBUG]: Received correlation id: 7
+14:48:56,825 <kafka.protocol.parser>[DEBUG]: Processing response LeaveGroupResponse_v1
+14:48:56,826 <kafka.conn>[DEBUG]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]> Response 7 (19.18196678161621 ms): LeaveGroupResponse_v1(throttle_time_ms=0, error_code=0)
+14:48:56,827 <kafka.coordinator>[DEBUG]: LeaveGroup request for group group1 returned successfully
+14:48:56,827 <kafka.conn>[INFO]: <BrokerConnection node_id=2 host=localhost:9093 <connected> [IPv6 ('::1', 9093, 0, 0)]>: Closing connection. 
+14:48:56,829 <kafka.conn>[INFO]: <BrokerConnection node_id=coordinator-3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+14:48:56,829 <kafka.conn>[INFO]: <BrokerConnection node_id=3 host=localhost:9094 <connected> [IPv6 ('::1', 9094, 0, 0)]>: Closing connection. 
+14:48:56,832 <kafka.consumer.group>[DEBUG]: The KafkaConsumer has closed.
+14:48:56,832 <consumer>[INFO]: Kafka consumer closed.
